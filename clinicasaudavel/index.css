@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eef7ff;
+    margin: 20px;
+}
+
+/* Título principal */
+#titulo-clinica{
+    text-align: center;
+    color: darkblue;
+}
+
+/* Texto de boas-vindas */
+.bemvindo{
+    text-align: center;
+    font-size: 18px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+/* Área de serviços */
+#servicos{
+    margin-top: 20px;
+}
+
+/* Cada serviço */
+.servico{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid steelblue;
+    border-radius: 8px;
+}
+
+/* Área dos médicos */
+#medicos{
+    margin-top: 25px;
+}
+
+/* Cada médico */
+.medico{
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+}
+
+/* Aviso importante */
+#aviso{
+    background-color: #fff3cd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: #856404;
+}
+
+/* Depoimentos */
+.depoimento{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 4px solid green;
+    border-radius: 5px;
+}
