@@ -1,0 +1,51 @@
+:root { 
+  
+    --cor-primaria: pink;
+    --cor-secundaria: red;
+    --cor-fundo: white;
+     --cor-texto:blue;
+     --cor-branca: white;
+
+--Fonte-principal: Arial,sans-serif;
+  
+--borda-radius: 10px;
+--Sombra:0 4px 10px rgba(0, 0 , 0 , 2 , 1);
+} 
+ 
+body{
+ margin : 0; 
+ padding: 0;
+ font-family: var(--Fonte-principal);
+ background-color: var(--cor-fundo);
+ color: var(--cor-texto);
+
+  display: flex;
+ justify-content: center;
+ align-items: center;
+height: 1OOvh;
+}
+
+.caixa {
+
+ background-color: var(--cor-branca);
+padding: 30px;
+border-radius: var(--borda-radius);
+box-shadow: var(--Sombra);
+text-align: center;
+width: 300pxq   ;
+}
+
+button {
+background-color: var(--cor-primaria);
+color: blue;
+border: none;
+padding: 10px 20px ;
+border-radius: var(--borda-radius);
+cursor: pointer;
+}
+
+button:hover {
+ background-color: var(--cor-secundaria);
+
+
+}
