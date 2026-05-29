@@ -1,0 +1,85 @@
+:root{
+      --cor-primaria: #6c2bd9;
+      --cor-secundaria: #121212;
+      --cor-texto: #ffffff;
+      --cor-card: #1e1e1e;
+      --cor-botao: #297559;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg, #121212, #2a0845);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--cor-texto);
+    }
+
+    .container{
+      background-color: var(--cor-card);
+      width: 800px;
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .imagem img{
+      width: 300px;
+      border-radius: 15px;
+    }
+
+    .conteudo{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .titulo{
+      font-size: 36px;
+      color: var(--cor-primaria);
+    }
+
+    .descricao{
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .botoes{
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn{
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn-jogar{
+      background-color: var(--cor-botao);
+      color: white;
+    }
+
+    .btn-info{
+      background-color: transparent;
+      border: 2px solid var(--cor-botao);
+      color: white;
+    }
+
+    .btn:hover{
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
