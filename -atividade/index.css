@@ -1,0 +1,38 @@
+style
+button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    animation: animacaoBotao 4s infinite;
+}
+
+@keyframes animacaoBotao {
+    0% {
+        left: 0;
+        background-color: blue;
+    }
+
+    25% {
+        background-color: purple;
+    }
+
+    50% {
+        left: 300px;
+        background-color: red;
+    }
+
+    75% {
+        background-color: orange;
+    }
+
+    100% {
+        left: 0;
+        background-color: green;
+    }
+}
+style
