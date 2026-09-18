@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel de Viagem</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 8px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #222;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        #mensagem {
+            margin: 20px 0;
+            font-size: 18px;
+            min-height: 25px;
+        }
+
+        .contador {
+            margin-top: 30px;
+        }
+
+        #valorContador {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="titulo">Painel de Viagem ✈️</h1>
+
+        <p>Digite uma cidade que você gostaria de conhecer:</p>
+
+        <input type="text" id="cidade" placeholder="Digite uma cidade">
+
+        <br>
+
+        <button id="botaoCidade" onclick="mostrarCidade()">
+            Mostrar cidade
+        </button>
+
+        <p id="mensagem"></p>
+
+        <button id="botaoEstilo" onclick="destacarMensagem()">
+            Destacar mensagem
+        </button>
+
+        <div class="contador">
+
+            <h2>Contador</h2>
+
+            <button id="botaoMenos" onclick="diminuirContador()">
+                -
+            </button>
+
+            <span id="valorContador">10</span>
+
+            <button id="botaoMais" onclick="aumentarContador()">
+                +
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        // Variável do contador
+        let contador = 10;
+
+        // Função para mostrar a cidade
+        function mostrarCidade() {
+
+            // Pega a cidade digitada
+            let cidade = document.getElementById("cidade").value;
+
+            // Pega o parágrafo da mensagem
+            let mensagem = document.getElementById("mensagem");
+
+            // Verifica se o campo está vazio
+            if (cidade === "") {
+
+                mensagem.textContent = "Digite uma cidade para continuar!";
+
+            } else {
+
+                mensagem.textContent =
+                    "Sua próxima aventura pode ser em " + cidade + "! 🌎✈️";
+            }
+        }
+
+        // Função para destacar a mensagem
+        function destacarMensagem() {
+
+            let mensagem = document.getElementById("mensagem");
+
+            // Alterando duas ou mais propriedades de estilo
+            mensagem.style.color = "white";
+            mensagem.style.backgroundColor = "#222";
+            mensagem.style.fontSize = "24px";
+            mensagem.style.padding = "15px";
+            mensagem.style.borderRadius = "10px";
+            mensagem.style.textAlign = "center";
+        }
+
+        // Função para aumentar o contador
+        function aumentarContador() {
+
+            contador++;
+
+            document.getElementById("valorContador").textContent = contador;
+        }
+
+        // Função para diminuir o contador
+        function diminuirContador() {
+
+            contador--;
+
+            document.getElementById("valorContador").textContent = contador;
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
